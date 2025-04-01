@@ -8,7 +8,7 @@ class father:
 class son(father):
     def _init_(self,name,age,gender):
         self.gender = gender
-        father.__init__(self,name,age)
+        super.__init__(name,age)
 info=son("Mukesh",44,"male")
 print(info.__age)
 print(info.name)
